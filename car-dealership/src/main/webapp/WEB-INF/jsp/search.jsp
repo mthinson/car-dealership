@@ -57,10 +57,13 @@ flex-shrink:0;
       
     </div>
     </form:form>
-    
+      </main>
+
+    	<!-- origional search -->
+    		<div class="d-flex flex-row justify-content-center m-3 flex-wrap ">
     	<c:forEach items="${searchList}" var="car">
-			
-					<div class="card mx-2 mt-2 mb-2 h-50" style="width: 18rem;">
+	
+					<div class="card mx-2 mt-2 mb-2 h-50 " style="width: 18rem;">
 						<a  href="/inventory-data?info=${car.vin}">
 							<img src="${car.image}" style="height: 250px;"class="card-img-top" alt="...">
 					</a>
@@ -81,8 +84,10 @@ flex-shrink:0;
 					</div>
 					
 			</c:forEach>
+			
+			</div>
     
-  </main>
+
 
   <footer class="mt-auto text-white-50">
   	<p class="lead text-white">Thank you for visiting</p>

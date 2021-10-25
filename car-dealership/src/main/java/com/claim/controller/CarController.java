@@ -109,9 +109,7 @@ public class CarController{
 		public String search(Model model, @ModelAttribute("searchVehicle")Cars searchCar, HttpSession session) {
 			
 			ArrayList<Cars> searchList = carLists.search(searchCar.getMake());
-			
 			model.addAttribute("searchList", searchList);
-		
 			return "search";
 			
 		}

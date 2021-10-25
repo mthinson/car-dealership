@@ -43,9 +43,9 @@ public class CarList {
 
 	public ArrayList<Cars> search(String make) {
 		        ArrayList<Cars> searchResults = new ArrayList<>();
-		        System.out.println("inside search method");
+		        System.out.println("inside search method: " +make);
 		        for (Cars vehicle : inventory) {
-		            if (vehicle.getMake().contains(make)) {
+		            if (vehicle.getMake().equalsIgnoreCase(make)) {
 		            	if(vehicle.isForSale() == true) {
 		            		searchResults.add(vehicle);
 		            		System.out.println("car added");

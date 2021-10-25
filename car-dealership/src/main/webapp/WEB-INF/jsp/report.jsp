@@ -14,7 +14,18 @@
 
 <title>Matts Car Dealership</title>
 
+<style>
+th {
+background-color:white;
+color:black;
+}
+td{
+background-color:#DCDCDC;
+color:black;
+}
 
+
+</style>
 </head>
 
 <body class="d-flex h-100 text-center text-white bg-dark">
@@ -60,8 +71,10 @@
   			<td><c:out value="${buyer.email}"/></td>
   			<td><c:out value="${buyer.cars.forSale}"/></td>
   		</tr>
+  	
   	</c:forEach>
   </table>
+  
 
   <footer class="mt-auto text-white-50">
   	<p class="lead text-white">Thank you for visiting</p>

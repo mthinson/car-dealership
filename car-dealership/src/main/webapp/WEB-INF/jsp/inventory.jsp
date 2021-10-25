@@ -33,9 +33,10 @@ max-height:400px;
 			<div>
 				<nav class="nav nav-masthead justify-content-center float-md-end">
 					<a class="nav-link text-white active" aria-current="page" href="/">Home</a>
-					<a class="nav-link text-white" href="inventory">Inventory</a> <a
-						class="nav-link text-white" href="about">About</a> <a
-						class="nav-link text-white" href="report">Reports</a>
+					<a class="nav-link text-white" href="inventory">Inventory</a> 
+					<a class="nav-link text-white" href="about">About</a>
+				    <a class="nav-link text-white" href="report">Reports</a>
+				    <a class="nav-link text-white" href="search">Search</a>
 				</nav>
 			</div>
 		</header>
@@ -52,25 +53,6 @@ max-height:400px;
 		<div class="d-flex flex-row justify-content-center m-3 flex-wrap ">
 			<c:forEach items="${arr}" var="car">
 
-				<!--  	<p>
-				<a href="${car.image}"></a> <br> Model:
-				<c:out value="${car.model}" />
-				Make:
-				<c:out value="${car.make}" />
-				Price:
-				<c:out value="${car.price }" />
-				Description:
-				<c:out value="${car.description}" />
-				Year:
-				<c:out value="${car.year}" />
-				Color:
-				<c:out value="${car.color}" />
-				Milage:
-				<c:out value="${car.milage}" />
-				VIN:
-			<c:out value="${car.vin}" />
-			</p>
-			-->
 			
 					<div class="card mx-2 mt-2 mb-2 h-50" style="width: 18rem;">
 						<a  href="/inventory-data?info=${car.vin}">
